@@ -1,246 +1,461 @@
-<!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Phantom by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark Matter — Jordan Blake Portfolio</title>
+  <meta name="description" content="Cinematic & moody technical writer portfolio. Writing that illuminates complexity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+    :root {
+      --bg:   #0C0C0C;
+      --fg:   #F0EDE6;
+      --lime: #C8FF00;
+      --dim:  #3a3a3a;
+      --warm: #8C7B68;
+    }
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-								</a>
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'Outfit', sans-serif;
+    }
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+    a { text-decoration: none; }
 
-						</div>
-					</header>
+    /* ── Nav ── */
+    nav {
+      padding: 28px 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--dim);
+    }
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-					</nav>
+    .nav-logo {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: var(--fg);
+    }
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h1>This is Phantom, a free, fully responsive site<br />
-								template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
-								<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
-							</header>
-							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Magna</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Lorem</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Feugiat</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Tempus</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Aliquam</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Veroeros</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/pic07.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Ipsum</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/pic08.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Dolor</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style1">
-									<span class="image">
-										<img src="images/pic09.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Nullam</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="images/pic10.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Ultricies</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="images/pic11.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Dictum</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/pic12.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Pretium</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-							</section>
-						</div>
-					</div>
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+    }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: var(--warm);
+      transition: color 0.15s;
+    }
 
-			</div>
+    .nav-links a:hover { color: var(--fg); }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    .btn-lime {
+      background: var(--lime);
+      color: #000;
+      font-family: 'Outfit', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 10px 22px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
 
-	</body>
+    .btn-lime:hover { opacity: 0.85; }
+
+    /* ── Hero ── */
+    .hero {
+      padding: 96px 56px 80px;
+    }
+
+    .hero-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 4px;
+      color: var(--warm);
+      margin-bottom: 32px;
+      text-transform: uppercase;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .hero-heading {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(48px, 5.5vw, 84px);
+      line-height: 1.05;
+      color: var(--fg);
+      font-weight: 700;
+    }
+
+    .hero-heading em {
+      color: var(--lime);
+      font-style: italic;
+    }
+
+    .hero-body {
+      padding-top: 8px;
+    }
+
+    .hero-body p {
+      font-size: 17px;
+      line-height: 1.85;
+      color: var(--warm);
+      margin-bottom: 40px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+    }
+
+    .btn-primary {
+      background: var(--fg);
+      color: var(--bg);
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 14px 32px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: opacity 0.15s;
+    }
+
+    .btn-primary:hover { opacity: 0.85; }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--fg);
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 14px 32px;
+      border: 1px solid var(--dim);
+      cursor: pointer;
+      border-radius: 4px;
+      transition: border-color 0.15s;
+    }
+
+    .btn-ghost:hover { border-color: var(--warm); }
+
+    /* ── Photo + Stats ── */
+    .photo-stats {
+      border-top: 1px solid var(--dim);
+      border-bottom: 1px solid var(--dim);
+      display: grid;
+      grid-template-columns: 380px 1fr;
+    }
+
+    .photo-col {
+      border-right: 1px solid var(--dim);
+      overflow: hidden;
+      height: 320px;
+    }
+
+    .photo-col img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: grayscale(30%);
+    }
+
+    .stats-col {
+      padding: 56px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-content: center;
+    }
+
+    .stat-value {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 52px;
+      font-weight: 700;
+      color: var(--lime);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 13px;
+      color: var(--warm);
+      line-height: 1.5;
+    }
+
+    /* ── Work ── */
+    .work {
+      padding: 80px 56px;
+    }
+
+    .work-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--dim);
+      padding-bottom: 20px;
+    }
+
+    .work-header h2 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 28px;
+      color: var(--fg);
+      font-weight: 400;
+    }
+
+    .work-years {
+      font-size: 12px;
+      color: var(--warm);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .work-row {
+      border-bottom: 1px solid var(--dim);
+      padding: 28px 0;
+      display: grid;
+      grid-template-columns: 60px 1fr 200px 120px;
+      gap: 32px;
+      align-items: center;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .work-row:hover { background: rgba(200, 255, 0, 0.03); }
+
+    .work-num {
+      font-family: 'Space Mono', monospace;
+      font-size: 12px;
+      color: var(--warm);
+    }
+
+    .work-title {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 20px;
+      color: var(--fg);
+      margin-bottom: 4px;
+    }
+
+    .work-desc {
+      font-size: 13px;
+      color: var(--warm);
+    }
+
+    .work-tag {
+      font-size: 11px;
+      color: var(--warm);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .work-year {
+      font-size: 13px;
+      color: var(--lime);
+      font-weight: 500;
+      text-align: right;
+    }
+
+    /* ── Quote ── */
+    .quote-section {
+      border-top: 1px solid var(--dim);
+      padding: 80px 56px;
+      background: #111;
+    }
+
+    .quote-text {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(24px, 2.8vw, 40px);
+      line-height: 1.45;
+      color: var(--fg);
+      max-width: 760px;
+      font-style: italic;
+      margin-bottom: 24px;
+    }
+
+    .quote-attr {
+      font-size: 13px;
+      color: var(--warm);
+    }
+
+    /* ── Contact ── */
+    .contact {
+      padding: 80px 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--dim);
+    }
+
+    .contact-label {
+      font-size: 11px;
+      color: var(--warm);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .contact-email {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(24px, 3vw, 44px);
+      color: var(--fg);
+    }
+
+    .btn-lime-lg {
+      background: var(--lime);
+      color: #000;
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 18px 40px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: opacity 0.15s;
+    }
+
+    .btn-lime-lg:hover { opacity: 0.85; }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-logo">Jordan Blake</div>
+    <div class="nav-links">
+      <a href="#">Work</a>
+      <a href="#">About</a>
+      <a href="#">Resume</a>
+      <button class="btn-lime">Get in touch</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-label">Technical Writer — Remote</div>
+    <div class="hero-grid">
+      <div>
+        <h1 class="hero-heading">
+          Writing that<br>
+          <em>illuminates</em><br>
+          complexity.
+        </h1>
+      </div>
+      <div class="hero-body">
+        <p>
+          I craft documentation, developer guides, and technical narratives
+          that turn ambiguity into understanding. Precision without
+          jargon. Clarity without condescension.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-primary">View work →</button>
+          <button class="btn-ghost">Download CV</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo + Stats -->
+  <div class="photo-stats">
+    <div class="photo-col">
+      <img
+        src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=360&fit=crop&auto=format"
+        alt="Jordan Blake"
+      />
+    </div>
+    <div class="stats-col">
+      <div>
+        <div class="stat-value">6</div>
+        <div class="stat-label">Years in technical writing</div>
+      </div>
+      <div>
+        <div class="stat-value">40+</div>
+        <div class="stat-label">Documentation projects shipped</div>
+      </div>
+      <div>
+        <div class="stat-value">38%</div>
+        <div class="stat-label">Avg. support ticket reduction</div>
+      </div>
+      <div>
+        <div class="stat-value">12</div>
+        <div class="stat-label">Companies worked with</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Work -->
+  <section class="work">
+    <div class="work-header">
+      <h2>Selected work</h2>
+      <span class="work-years">2022 — 2025</span>
+    </div>
+
+    <div class="work-row">
+      <div class="work-num">01</div>
+      <div>
+        <div class="work-title">Vercel Platform Documentation</div>
+        <div class="work-desc">Complete rewrite of deployment and infrastructure docs.</div>
+      </div>
+      <div class="work-tag">Developer Experience</div>
+      <div class="work-year">2024 →</div>
+    </div>
+
+    <div class="work-row">
+      <div class="work-num">02</div>
+      <div>
+        <div class="work-title">Stripe API Reference</div>
+        <div class="work-desc">Restructured 400+ endpoints with interactive examples.</div>
+      </div>
+      <div class="work-tag">API Documentation</div>
+      <div class="work-year">2024 →</div>
+    </div>
+
+    <div class="work-row">
+      <div class="work-num">03</div>
+      <div>
+        <div class="work-title">Notion Enterprise Guide</div>
+        <div class="work-desc">Migration and onboarding docs for enterprise clients.</div>
+      </div>
+      <div class="work-tag">User Documentation</div>
+      <div class="work-year">2023 →</div>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="quote-section">
+    <p class="quote-text">
+      "Jordan has a rare ability to understand deeply technical systems and
+      translate them into prose that anyone can follow. They're the best
+      writer I've worked with in 15 years."
+    </p>
+    <div class="quote-attr">— Marcus Chen, VP Engineering, Vercel</div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <div>
+      <div class="contact-label">Available for new projects</div>
+      <div class="contact-email">jordan@jordanblake.io</div>
+    </div>
+    <button class="btn-lime-lg">Start a conversation →</button>
+  </section>
+
+</body>
 </html>
